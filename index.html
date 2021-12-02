@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="src/style.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/039c7d67e1.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <title>Week 5 Homework</title>
+  </head>
+  <body>
+    <form id="search-bar" role="search">
+      <input
+        type="search"
+        id="search-input"
+        name="q"
+        placeholder="Enter a city and press enter"
+        aria-label="Search for a city's weather"
+      />
+    </form>
+    <div class="container">
+      <div class="cell cell-1today">
+        <h1>TODAY</h1>
+        <h2 id="city-header">in Paris</h2>
+        <h3 id="current-date-header">Thursday, Oct 1</h3>
+        <h4 id="current-temp-header">18°</h4>
+        <h5 id="current-description-header">Rainy</h5>
+        <!--add after inserting function to change-<span id="weather-emoji">🌧</span>
+        <br />-->
+        <h6 id="humidity-header"></h6>
+        <h7 id="windspeed-header"></h7>
+      </div>
+      <div class="cell cell-2tomorrow">
+        <h3>Tomorrow</h3>
+        <p>
+          Friday
+          <br />
+          18°/14°
+          <br />
+          🌧
+        </p>
+      </div>
+      <div class="cell cell-3future">
+        <h3>Oct. 3</h3>
+        <p>
+          Saturday
+          <br />
+          15°/10°
+          <br />
+          🌧
+        </p>
+      </div>
+      <div class="cell cell-4tomorrow"></div>
+      <div class="cell cell-5tomorrow"></div>
+      <div class="cell cell-6future">
+        <h3>Oct. 4</h3>
+        <p>
+          Sunday
+          <br />
+          12°/8°
+          <br />
+          🌥
+        </p>
+      </div>
+      <div class="cell cell-7future"></div>
+      <div class="cell cell-8future"></div>
+      <div class="cell cell-9future">
+        <h3>Oct. 5</h3>
+        <p>
+          Monday
+          <br />
+          12°/7°
+          <br />
+          🌥
+        </p>
+      </div>
+    </div>
+    <script src="src/index.js"></script>
+  </body>
+</html>
